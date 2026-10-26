@@ -19,9 +19,13 @@ export interface ToolMeta {
 }
 
 import { pdfWatermarkTool } from "../features/pdf-watermark";
+import { ImageWatermarkPage, ImageBeautyPage } from "../features/image-tools/ImageToolPage";
 
 /**
  * 全局工具清单。
  * 这是「工具箱」的扩展核心：图片水印 / 视频压缩等未来功能只需向此数组追加一项。
  */
-export const TOOLS: ToolMeta[] = [pdfWatermarkTool];
+export const TOOLS: ToolMeta[] = [pdfWatermarkTool,
+  { id: "image-watermark", name: "图片文字水印", desc: "平铺或居中文字水印，自定义颜色、角度和透明度", icon: "🖼️", element: ImageWatermarkPage },
+  { id: "image-beauty", name: "图片美颜", desc: "本地磨皮、提亮与肤色冷暖调整", icon: "✨", element: ImageBeautyPage },
+];

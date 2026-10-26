@@ -11,7 +11,7 @@ export default function HomeGrid({ onOpen }: { onOpen: (id: string) => void }) {
     <div className="p-8">
       <h1 className="text-2xl font-semibold text-slate-800">办公工具箱</h1>
       <p className="mt-1 text-sm text-slate-500">
-        选择一个工具开始。更多功能（图片水印、视频压缩）陆续加入。
+        PDF 水印、图片水印与图片美颜，文件均在本地处理。
       </p>
 
       <div className="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
